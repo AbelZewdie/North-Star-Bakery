@@ -1,0 +1,106 @@
+@import url("shared.css");
+
+/* Contact page accents */
+nav a[href="contact.html"] {
+  border-bottom-color: var(--color-accent);
+}
+
+form p {
+  max-width: 74ch;
+}
+
+.contact-main > p {
+  max-width: 72ch;
+}
+
+.contact-main form {
+  gap: var(--space-2);
+}
+
+.contact-main fieldset > p:last-child {
+  margin-bottom: 0;
+}
+
+abbr[title="required"] {
+  color: #8f2525;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button[type="submit"] {
+  min-width: 180px;
+}
+
+.contact-main button[type="submit"] {
+  width: fit-content;
+}
+
+address a {
+  font-weight: 700;
+}
+
+.contact-main > form,
+.contact-main > section {
+  flex: 1 1 100%;
+}
+
+.contact-main form > fieldset:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--space-2);
+  row-gap: var(--space-1);
+}
+
+.contact-main form > fieldset:first-of-type > p {
+  margin-bottom: 0;
+}
+
+
+@media (min-width: 768px) {
+  .contact-main form {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .contact-main form > fieldset {
+    flex: 1 1 auto;
+  }
+
+  .contact-main form > fieldset:first-of-type {
+    order: 1;
+  }
+
+  .contact-main form > fieldset:last-of-type {
+    order: 2;
+  }
+
+  .contact-main form > p:last-child {
+    order: 3;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .contact-main > h2,
+  .contact-main > p {
+    flex-basis: 100%;
+  }
+
+  .contact-main > form {
+    flex: 2 1 560px;
+  }
+
+  .contact-main > section {
+    flex: 1 1 280px;
+  }
+
+  .contact-main > section:last-of-type {
+    align-self: stretch;
+  }
+}
+

@@ -1,0 +1,89 @@
+@import url("shared.css");
+
+/* Styles for products.html */
+
+/* Products page accents */
+nav a[href="products.html"] {
+  border-bottom-color: var(--color-accent);
+}
+
+main > p {
+  max-width: 74ch;
+}
+
+.products-main > section {
+  flex: 1 1 100%;
+}
+
+.products-main section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.products-main section li {
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  background: #fffaf3;
+}
+
+.products-main section li + li {
+  margin-top: 0.75rem;
+}
+
+small {
+  display: inline-block;
+  margin-top: 0.25rem;
+  background: #f7efe5;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+}
+
+picture img {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .products-main section li {
+    padding: 0.7rem 0.75rem;
+  }
+
+  .products-main section li + li {
+    margin-top: 0.6rem;
+  }
+
+  .products-main section li small {
+    display: block;
+    width: fit-content;
+    margin-top: 0.45rem;
+  }
+
+  .products-main > section:first-of-type img {
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 900px) {
+  .products-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .products-main > h2,
+  .products-main > p {
+    flex-basis: 100%;
+  }
+
+  .products-main > section {
+    flex: 1 1 calc(50% - var(--space-2));
+  }
+
+  .products-main > section:last-of-type {
+    flex-basis: 100%;
+  }
+}
+

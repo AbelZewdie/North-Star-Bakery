@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — North Star Bakery</title>
+  <meta name="description" content="Get in touch with North Star Bakery to place a pre-order, request a custom cake, or ask about our menu. We respond within one business day.">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <img src="Bakery_c/bakery-logo_c.png" alt="North Star Bakery logo" width="120">
+    <div class="brand-block">
+      <h1>North Star Bakery</h1>
+      <p class="header-tagline">Baked with love, shared with neighbors.</p>
+    </div>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="contact-main" id="main-content">
+
+    <h2>Get in Touch or Place a Custom Order</h2>
+    <p>
+      We love hearing from our community! Whether you have a question about our menu, want to
+      arrange a large order for an event, or need a custom celebration cake, we are happy to help.
+      Fill out the form below and we will get back to you within one business day.
+    </p>
+    <p>
+      <strong>Please note:</strong> Pre-orders and custom cake requests require at least
+      <strong>72 hours notice</strong>. For large or multi-tiered cakes, please allow one week.
+    </p>
+
+    <form method="post" action="#">
+
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <p>
+          <label for="name">Full Name <abbr title="required">*</abbr></label><br>
+          <input type="text" id="name" name="name" required placeholder="Jane Smith">
+        </p>
+
+        <p>
+          <label for="email">Email Address <abbr title="required">*</abbr></label><br>
+          <input type="email" id="email" name="email" required placeholder="jane@example.com">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Request</legend>
+
+        <p>
+          <label for="request-type">Request Type <abbr title="required">*</abbr></label><br>
+          <select id="request-type" name="request-type" required>
+            <option value="" disabled selected>-- Please select --</option>
+            <option value="general-question">General Question</option>
+            <option value="bread-preorder">Bread Pre-Order</option>
+            <option value="pastry-preorder">Pastry Pre-Order</option>
+            <option value="custom-cake">Custom Cake Order</option>
+            <option value="event-catering">Event &amp; Catering Inquiry</option>
+            <option value="wholesale">Wholesale Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="pickup-date">Preferred Pickup Date</label><br>
+          <input type="date" id="pickup-date" name="pickup-date">
+        </p>
+
+        <p>
+          <label for="item-details">Item Details</label><br>
+          Tell us what you'd like — quantities, flavors, sizes, or any special requests.<br>
+          <textarea id="item-details" name="item-details" rows="5" cols="50"
+            placeholder="e.g., 2 country sourdough loaves and a dozen butter croissants for Saturday pickup"></textarea>
+        </p>
+
+        <p>
+          <label for="allergy-notes">Allergy Notes</label><br>
+          Please list any allergies or dietary restrictions we should know about (e.g., nuts, gluten, dairy, eggs).<br>
+          <textarea id="allergy-notes" name="allergy-notes" rows="3" cols="50"
+            placeholder="e.g., severe tree nut allergy — please avoid cross-contamination"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Send Your Request</button>
+      </p>
+
+    </form>
+
+    <section>
+      <h2>Find Us</h2>
+      <address>
+        <strong>North Star Bakery</strong><br>
+        142 Maple Street<br>
+        Maplewood, MN 55109<br><br>
+        Phone: <a href="tel:+16515550192">(651) 555-0192</a><br>
+        Email: <a href="mailto:hello@northstarbakery.com">hello@northstarbakery.com</a>
+      </address>
+    </section>
+
+    <section>
+      <h2>Bakery Hours</h2>
+      <dl>
+        <dt>Monday – Friday</dt>
+        <dd>7:00 AM – 6:00 PM</dd>
+        <dt>Saturday</dt>
+        <dd>7:00 AM – 4:00 PM</dd>
+        <dt>Sunday</dt>
+        <dd>8:00 AM – 2:00 PM</dd>
+      </dl>
+      <p>
+        <em>Holiday hours may vary. Follow us on social media or call ahead on major holidays to
+        confirm availability.</em>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 North Star Bakery &mdash; 142 Maple Street, Maplewood, MN 55109</p>
+    <p class="footer-tagline">Handcrafted with love since 2009 🌟</p>
+  </footer>
+
+</body>
+</html>

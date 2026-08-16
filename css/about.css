@@ -1,0 +1,61 @@
+@import url("shared.css");
+
+/* About page accents */
+nav a[href="about.html"] {
+  border-bottom-color: var(--color-accent);
+}
+
+.about-main > section:nth-of-type(2) ul {
+  columns: 1;
+  column-gap: 1.5rem;
+}
+
+.about-main > section > p {
+  max-width: 72ch;
+}
+
+article {
+  border-left: 4px solid var(--color-muted);
+  background: linear-gradient(180deg, #ffffff 0%, #fcf4ea 100%);
+}
+
+.about-main > section:nth-of-type(3) {
+  align-items: stretch;
+}
+
+.about-main > section:nth-of-type(3) article {
+  flex: 1 1 100%;
+}
+
+video {
+  margin-top: 0.75rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 800px) {
+  .about-main > section:nth-of-type(2) ul {
+    columns: 2;
+  }
+
+  .about-main > section:nth-of-type(3) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-main > section:nth-of-type(3) h2 {
+    flex-basis: 100%;
+  }
+
+  .about-main > section:nth-of-type(3) article {
+    flex: 1 1 calc(33.333% - var(--space-2));
+  }
+
+  .about-main > section:nth-of-type(4) {
+    align-items: center;
+  }
+
+  .about-main > section:nth-of-type(4) video {
+    width: min(820px, 100%);
+  }
+}
